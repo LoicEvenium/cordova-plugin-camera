@@ -1394,7 +1394,7 @@ public class CameraLauncher extends CordovaPlugin implements MediaScannerConnect
      */
     private String getFileNameFromUri(Uri uri) {
         String fullUri = uri.toString();
-        String partial_path = fullUri.split("external_files")[1];
+        String partial_path = fullUri.split("external_cache")[1];
         File external_storage = Environment.getExternalStorageDirectory();
         String path = external_storage.getAbsolutePath() + partial_path;
         return path;
