@@ -46,7 +46,7 @@ public class CordovaUri {
     CordovaUri (Uri inputUri)
     {
         //Determine whether the file is a content or file URI
-        if(inputUri.getScheme().equals("content"))
+        if("content".equals(inputUri.getScheme()))
         {
             androidUri = inputUri;
             fileName = getFileNameFromUri(androidUri);
